@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     serial = new QSerialPort(this);
-    serial->setPortName("COM3"); // Altere conforme necessário
+    serial->setPortName("COM3"); 
     serial->setBaudRate(QSerialPort::Baud9600);
     serial->setDataBits(QSerialPort::Data8);
     serial->setParity(QSerialPort::NoParity);
